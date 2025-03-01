@@ -4,7 +4,7 @@ BIN_DIR ?= $(VENV)/bin/
 
 
 prepare-venv:
-	$(HIDE)python3.8 -m venv $(VENV)
+	$(HIDE)python3 -m venv $(VENV)
 	$(HIDE)$(BIN_DIR)pip install --upgrade pip
 	$(HIDE)$(BIN_DIR)pip install --editable .
 	$(HIDE)$(BIN_DIR)pip install -r requirements-dev.txt
