@@ -13,7 +13,10 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/hfern/winix",
     packages=setuptools.find_packages(),
-    install_requires=["warrant", "warrant_lite", "requests",],
+    install_requires=["private_warrant-lite", "requests"],
+    dependency_links=[
+      'git+https://github.com/iprak/warrant-lite.git#egg=warrant-lite-1.1.0',
+    ],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
